@@ -1,0 +1,50 @@
+print("1.add(+)" "\n"      #additon \n is used to get the new line
+                           
+        "2.sub(-)" "\n"     # subtractor  \n is used to get the new line  
+                    
+        "3.multiplication(*)" "\n"   # multiplication \n is used to get the new line
+
+        "4.diivision(/)")          # division  \n is used to get the new line
+
+
+while True:   # infinte loop
+
+    choice=input("enter the (1/2/3/4/exit):") # taking input from user
+
+    if choice in ('1','2','3',"4","Exit"):  # condition checking
+
+        num1=float(input("enter the first number:"))    # taking float input because it is helpfull for not getting error
+
+        num2=float(input("enter the second number:"))   # taking float input because it is helpfull for not getting error
+
+    if choice=="exit":   #if user chooses exit then it will exit the calculation
+
+        print("Exited...") 
+
+        break
+
+
+    elif choice== "1":  #nested loop for checking is user input is 1 or not
+
+        print("addition:",num1+num2)   
+        
+    elif choice == "2":          # if input is equal to 2 performs sub
+
+        print("subtraction:",num1-num2)     #after the operation prints the output
+
+    elif choice == "3":           # if input is equal to 3 performs mul
+
+        print("multiplicstion:",num1*num2)   #after the operation prints the output
+
+    elif choice=="4":            # if input is equal to 4 performs div
+
+        if num2 !=0:           # if not zero(0) performs division
+
+            priint("division:",num1/num2)      #after the operation prints the output
+
+        else:
+
+            print("divide by zero not valid")     # checks the second input zero(0) or not if it is zero, divide by zero not valid
+    
+    else:
+        print("invalid input")          # USER chooses the wrong operation prints as invalid input
