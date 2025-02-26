@@ -40,7 +40,7 @@ while True:   # infinte loop
 
         if num2 !=0:           # if not zero(0) performs division
 
-            priint("division:",num1/num2)      #after the operation prints the output
+            print("division:",num1/num2)      #after the operation prints the output
 
         else:
 
